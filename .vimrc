@@ -13,6 +13,13 @@
 
 :noremap <C-f> :FZF -i<CR>
 :nnoremap gr :!grep -rn <cword> .<CR>
+:nmap <F8> :TagbarToggle<CR>
+
+" for split window
+" :noremap <C-1> <C-w>h<C-w>
+" :noremap <C-2> <C-w>l<C-w>
+:noremap ¡ <C-w>h
+:noremap ™ <C-w>l
 
 " END my own stuff
 
@@ -72,6 +79,7 @@ Plug 'nightsense/office'
 Plug 'nightsense/seagrey'
 " Plug 'rakr/vim-one'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
+Plug 'majutsushi/tagbar'
 
 call plug#end()
 
