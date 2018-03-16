@@ -21,6 +21,10 @@
 :noremap ¡ <C-w>h
 :noremap ™ <C-w>l
 
+let g:indent_guides_guide_size = 1
+let g:indent_guides_color_change_percent = 5
+let g:indent_guides_enable_on_vim_startup = 1
+
 " END my own stuff
 
 " filetype plugin indent on
@@ -74,12 +78,14 @@ call plug#begin(expand('~/.vim/plugged'))
 "*****************************************************************************
 "" Plug install packages
 "*****************************************************************************
-Plug 'https://github.com/keith/swift.vim'
+" Plug 'https://github.com/keith/swift.vim'
 Plug 'nightsense/office'
 Plug 'nightsense/seagrey'
 " Plug 'rakr/vim-one'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'majutsushi/tagbar'
+Plug 'nathanaelkane/vim-indent-guides'
+Plug 'maralla/completor.vim'
 
 call plug#end()
 
