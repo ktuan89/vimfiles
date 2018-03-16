@@ -1,0 +1,21 @@
+
+'atom-text-editor.vim-mode-plus.insert-mode':
+  'ctrl-v': 'vim-mode-plus:activate-normal-mode'
+
+  'ctrl-i': 'vim-mode-plus:move-up'
+  'ctrl-k': 'vim-mode-plus:move-down'
+  'ctrl-j': 'vim-mode-plus:move-left'
+  'ctrl-l': 'vim-mode-plus:move-right'
+
+'atom-text-editor.vim-mode-plus:not(.insert-mode)':
+  'j': 'vim-mode-plus:move-left'
+  'l': 'vim-mode-plus:move-right'
+  'i': 'vim-mode-plus:move-up'
+  'k': 'vim-mode-plus:move-down'
+
+  'ctrl-i': 'vim-mode-plus:scroll-half-screen-up'
+  'ctrl-k': 'vim-mode-plus:scroll-half-screen-down'
+  'ctrl-j': 'vim-mode-plus:move-to-first-character-of-line'
+  'ctrl-l': 'vim-mode-plus:move-to-last-character-of-line'
+
+  'ctrl-v': 'vim-mode-plus:activate-insert-mode'
