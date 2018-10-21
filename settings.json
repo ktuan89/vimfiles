@@ -1,6 +1,18 @@
 // for vs code
 {
-    "vim.otherModesKeyBindingsNonRecursive": [
+    "vim.normalModeKeyBindings": [
+        {"before": ["k"], "after": ["j"]},
+        {"before": ["i"], "after": ["k"]},
+        {"before": ["j"], "after": ["h"]},
+        {"before": ["C-j"], "after": ["^"]},
+        {"before": ["C-l"], "after": ["$"]},
+        {"before": ["C-i"], "after": ["C-u"]},
+        {"before": ["C-k"], "after": ["C-d"]},
+
+        {"before": ["C-v"], "after": ["i"]},
+    ],
+
+    "vim.visualModeKeyBindings": [
         {"before": ["k"], "after": ["j"]},
         {"before": ["i"], "after": ["k"]},
         {"before": ["j"], "after": ["h"]},
@@ -20,3 +32,4 @@
         {"before": ["C-v"], "after": ["<Esc>"]},
     ],
 }
+
