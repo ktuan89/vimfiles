@@ -24,6 +24,108 @@
         "key": "ctrl+l",
         "command": "extension.vim_navigateCtrlL",
         "when": "editorTextFocus && vim.active && vim.use<C-l> && !inDebugRepl"
-    }
+    },
+
+    // VimStyle
+    {
+        "key": "k", "command": "cursorDown",
+        "when": "editorTextFocus && vim.inNormalMode"
+    },
+    {
+        "key": "i", "command": "cursorUp",
+        "when": "editorTextFocus && vim.inNormalMode"
+    },
+    {
+        "key": "j", "command": "cursorLeft",
+        "when": "editorTextFocus && vim.inNormalMode"
+    },
+    {
+        "key": "l", "command": "cursorRight",
+        "when": "editorTextFocus && vim.inNormalMode"
+    },
+
+    {
+        "key": "k", "command": "cursorDown",
+        "when": "editorTextFocus && vim.inVisualMode"
+    },
+    {
+        "key": "i", "command": "cursorUp",
+        "when": "editorTextFocus && vim.inVisualMode"
+    },
+    {
+        "key": "j", "command": "cursorLeft",
+        "when": "editorTextFocus && vim.inVisualMode"
+    },
+    {
+        "key": "l", "command": "cursorRight",
+        "when": "editorTextFocus && vim.inVisualMode"
+    },
+
+    {
+        "key": "ctrl+k", "command": "cursorPageDown",
+        "when": "editorTextFocus && vim.inNormalMode"
+    },
+    {
+        "key": "ctrl+i", "command": "cursorPageUp",
+        "when": "editorTextFocus && vim.inNormalMode"
+    },
+    {
+        "key": "ctrl+j", "command": "cursorHome",
+        "when": "editorTextFocus && vim.inNormalMode"
+    },
+    {
+        "key": "ctrl+l", "command": "cursorEnd",
+        "when": "editorTextFocus && vim.inNormalMode"
+    },
+
+    {
+        "key": "ctrl+k", "command": "cursorPageDown",
+        "when": "editorTextFocus && vim.inVisualMode"
+    },
+    {
+        "key": "ctrl+i", "command": "cursorPageUp",
+        "when": "editorTextFocus && vim.inVisualMode"
+    },
+    {
+        "key": "ctrl+j", "command": "cursorHome",
+        "when": "editorTextFocus && vim.inVisualMode"
+    },
+    {
+        "key": "ctrl+l", "command": "cursorEnd",
+        "when": "editorTextFocus && vim.inVisualMode"
+    },
+
+    {
+        "key": "ctrl+k", "command": "cursorDown",
+        "when": "editorTextFocus && vim.inInsertMode"
+    },
+    {
+        "key": "ctrl+i", "command": "cursorUp",
+        "when": "editorTextFocus && vim.inInsertMode"
+    },
+    {
+        "key": "ctrl+j", "command": "cursorLeft",
+        "when": "editorTextFocus && vim.inInsertMode"
+    },
+    {
+        "key": "ctrl+l", "command": "cursorRight",
+        "when": "editorTextFocus && vim.inInsertMode"
+    },
+
+    {
+        "key": "ctrl+v",
+        "command": "vim.Esc",
+        "when": "editorTextFocus && vim.inInsertMode"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "vim.type-i",
+        "when": "editorTextFocus && vim.inNormalMode"
+    },
+    {
+        "key": "ctrl+v",
+        "command": "vim.type-i",
+        "when": "editorTextFocus && vim.inVisualMode"
+    },
 ]
 
